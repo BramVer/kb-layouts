@@ -1233,7 +1233,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RESET",
             "fields": []
           },
           {
@@ -2605,7 +2605,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_TOG",
             "fields": []
           },
           {
@@ -2691,7 +2691,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_TOGG",
             "fields": []
           },
           {
@@ -2777,7 +2777,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_DEC",
             "fields": []
           },
           {
@@ -2863,7 +2863,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_INC",
             "fields": []
           },
           {
@@ -2949,7 +2949,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_STEP",
             "fields": []
           },
           {
@@ -3035,7 +3035,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_MOD",
             "fields": []
           },
           {
@@ -3379,7 +3379,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_HUI",
             "fields": []
           },
           {
@@ -3465,7 +3465,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_HUD",
             "fields": []
           },
           {
@@ -3551,7 +3551,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_SAI",
             "fields": []
           },
           {
@@ -3637,7 +3637,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_SAD",
             "fields": []
           },
           {
@@ -3723,7 +3723,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_VAI",
             "fields": []
           },
           {
@@ -3809,7 +3809,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_VAD",
             "fields": []
           },
           {
@@ -5267,7 +5267,7 @@
           {
             "id": "TO()",
             "fields": [
-              0
+              1
             ]
           },
           {
@@ -5699,7 +5699,7 @@
           {
             "id": "TO()",
             "fields": [
-              0
+              2
             ]
           },
           {
@@ -5873,7 +5873,7 @@
           {
             "id": "TO()",
             "fields": [
-              0
+              3
             ]
           },
           {
@@ -6660,7 +6660,7 @@
       "diodeDirection": 0,
       "name": "XD75reee",
       "bootloaderSize": 2,
-      "rgbNum": 0,
+      "rgbNum": 3,
       "backlightLevels": 3
     }
   }
