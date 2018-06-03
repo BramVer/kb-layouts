@@ -541,7 +541,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_TOGG",
             "fields": []
           },
           {
@@ -627,7 +627,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_DEC",
             "fields": []
           },
           {
@@ -713,7 +713,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_INC",
             "fields": []
           },
           {
@@ -1401,7 +1401,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_WH_R",
             "fields": []
           },
           {
@@ -1487,7 +1487,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_BTN2",
             "fields": []
           },
           {
@@ -1573,7 +1573,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_MS_U",
             "fields": []
           },
           {
@@ -1659,7 +1659,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_BTN1",
             "fields": []
           },
           {
@@ -1745,7 +1745,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_WH_U",
             "fields": []
           },
           {
@@ -1831,7 +1831,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "BL_STEP",
             "fields": []
           },
           {
@@ -1917,7 +1917,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_TOG",
             "fields": []
           },
           {
@@ -2003,7 +2003,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_MOD",
             "fields": []
           },
           {
@@ -2605,7 +2605,7 @@
             "fields": []
           },
           {
-            "id": "RGB_TOG",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -2691,7 +2691,7 @@
             "fields": []
           },
           {
-            "id": "BL_TOGG",
+            "id": "KC_WH_L",
             "fields": []
           },
           {
@@ -2777,7 +2777,7 @@
             "fields": []
           },
           {
-            "id": "BL_DEC",
+            "id": "KC_MS_L",
             "fields": []
           },
           {
@@ -2863,7 +2863,7 @@
             "fields": []
           },
           {
-            "id": "BL_INC",
+            "id": "KC_MS_D",
             "fields": []
           },
           {
@@ -2949,7 +2949,7 @@
             "fields": []
           },
           {
-            "id": "BL_STEP",
+            "id": "KC_MS_R",
             "fields": []
           },
           {
@@ -3035,7 +3035,7 @@
             "fields": []
           },
           {
-            "id": "RGB_MOD",
+            "id": "KC_WH_D",
             "fields": []
           },
           {
@@ -3121,7 +3121,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_HUI",
             "fields": []
           },
           {
@@ -3207,7 +3207,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_HUD",
             "fields": []
           },
           {
@@ -3293,7 +3293,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_SAI",
             "fields": []
           },
           {
@@ -3379,7 +3379,7 @@
             "fields": []
           },
           {
-            "id": "RGB_HUI",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3465,7 +3465,7 @@
             "fields": []
           },
           {
-            "id": "RGB_HUD",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3551,7 +3551,7 @@
             "fields": []
           },
           {
-            "id": "RGB_SAI",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3637,7 +3637,7 @@
             "fields": []
           },
           {
-            "id": "RGB_SAD",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3723,7 +3723,7 @@
             "fields": []
           },
           {
-            "id": "RGB_VAI",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3809,7 +3809,7 @@
             "fields": []
           },
           {
-            "id": "RGB_VAD",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -4411,7 +4411,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_SAD",
             "fields": []
           },
           {
@@ -4499,7 +4499,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_VAI",
             "fields": []
           },
           {
@@ -4585,7 +4585,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "RGB_VAD",
             "fields": []
           },
           {
