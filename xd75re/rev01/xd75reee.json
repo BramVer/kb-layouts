@@ -5265,7 +5265,7 @@
         "col": 1,
         "keycodes": [
           {
-            "id": "TO()",
+            "id": "MO()",
             "fields": [
               1
             ]
@@ -5697,7 +5697,7 @@
         "col": 6,
         "keycodes": [
           {
-            "id": "TO()",
+            "id": "MO()",
             "fields": [
               2
             ]
@@ -5871,7 +5871,7 @@
         "col": 8,
         "keycodes": [
           {
-            "id": "TO()",
+            "id": "MO()",
             "fields": [
               3
             ]
