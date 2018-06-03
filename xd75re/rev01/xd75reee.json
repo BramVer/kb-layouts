@@ -6552,20 +6552,20 @@
           "argument": "KC_SPC"
         },
         {
+          "action": 4,
+          "argument": "KC_MINS"
+        },
+        {
           "action": 2,
           "argument": "KC_LSFT"
         },
         {
           "action": 4,
-          "argument": "KC_MINS"
+          "argument": "KC_S"
         },
         {
           "action": 3,
           "argument": "KC_LSFT"
-        },
-        {
-          "action": 4,
-          "argument": "KC_S"
         },
         {
           "action": 4,
