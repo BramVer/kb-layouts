@@ -34,8 +34,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "TO()",
+            "fields": [
+              1,
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5871,7 +5873,7 @@
         "col": 8,
         "keycodes": [
           {
-            "id": "MO()",
+            "id": "OSL()",
             "fields": [
               3
             ]
