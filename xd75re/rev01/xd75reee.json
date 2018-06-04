@@ -36,7 +36,7 @@
           {
             "id": "TO()",
             "fields": [
-              1,
+              0
             ]
           },
           {
@@ -121,8 +121,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -206,8 +208,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -291,8 +295,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -376,8 +382,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -461,8 +469,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -547,8 +557,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -633,8 +645,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -719,8 +733,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -805,8 +821,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -891,8 +909,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -977,8 +997,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1063,8 +1085,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1149,8 +1173,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1313,16 +1339,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_ESC",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_ESC",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              0
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1407,8 +1435,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1489,12 +1519,14 @@
             "fields": []
           },
           {
-            "id": "KC_BTN2",
+            "id": "KC_BTN1",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1579,8 +1611,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1661,12 +1695,14 @@
             "fields": []
           },
           {
-            "id": "KC_BTN1",
+            "id": "KC_BTN2",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1751,8 +1787,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1837,8 +1875,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -1923,8 +1963,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2009,8 +2051,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2095,8 +2139,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2173,7 +2219,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_MUTE",
             "fields": []
           },
           {
@@ -2181,8 +2227,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2259,7 +2307,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_VOLD",
             "fields": []
           },
           {
@@ -2267,8 +2315,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2345,7 +2395,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_VOLU",
             "fields": []
           },
           {
@@ -2353,8 +2403,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2439,8 +2491,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2517,16 +2571,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_ENT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_ENT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2603,16 +2659,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_TAB",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_TAB",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2697,8 +2755,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2783,8 +2843,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2869,8 +2931,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -2955,8 +3019,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3041,8 +3107,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3127,8 +3195,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3213,8 +3283,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3299,8 +3371,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3385,8 +3459,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3463,16 +3539,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_MPRV",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LEFT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3549,16 +3627,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_MPLY",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_DOWN",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3635,16 +3715,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_MNXT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_UP",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3725,12 +3807,14 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RGHT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3815,8 +3899,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3893,16 +3979,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LSFT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LSFT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -3987,8 +4075,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4073,8 +4163,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4159,8 +4251,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4245,8 +4339,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4331,8 +4427,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4417,8 +4515,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4505,8 +4605,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4591,8 +4693,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4677,8 +4781,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4763,8 +4869,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4849,8 +4957,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -4935,8 +5045,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5021,8 +5133,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5099,16 +5213,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RSFT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RSFT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5185,16 +5301,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LCTL",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LCTL",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5267,22 +5385,28 @@
         "col": 1,
         "keycodes": [
           {
-            "id": "MO()",
+            "id": "OSL()",
             "fields": [
-              1
+              3
             ]
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "TO()",
+            "fields": [
+              0
+            ]
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "TO()",
+            "fields": [
+              0
+            ]
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5359,16 +5483,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LALT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LALT",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5445,16 +5571,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LGUI",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LGUI",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5539,8 +5667,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5625,8 +5755,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5701,7 +5833,7 @@
           {
             "id": "MO()",
             "fields": [
-              2
+              1
             ]
           },
           {
@@ -5713,8 +5845,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5799,8 +5933,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5875,7 +6011,7 @@
           {
             "id": "OSL()",
             "fields": [
-              3
+              2
             ]
           },
           {
@@ -5887,8 +6023,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -5973,8 +6111,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6059,8 +6199,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6145,8 +6287,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6231,8 +6375,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6317,8 +6463,10 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6395,16 +6543,18 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RGUI",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RGUI",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
-            "fields": []
+            "id": "M()",
+            "fields": [
+              1
+            ]
           },
           {
             "id": "KC_TRNS",
@@ -6506,35 +6656,15 @@
     "macros": {
       "0": [
         {
-          "action": 2,
-          "argument": "KC_LGUI"
-        },
-        {
-          "action": 4,
-          "argument": "KC_ENT"
-        },
-        {
-          "action": 3,
-          "argument": "KC_LGUI"
-        },
-        {
           "action": 4,
           "argument": "KC_P"
         },
         {
-          "action": 2,
+          "action": 4,
           "argument": "KC_A"
         },
         {
-          "action": 2,
-          "argument": "KC_C"
-        },
-        {
-          "action": 3,
-          "argument": "KC_A"
-        },
-        {
-          "action": 3,
+          "action": 4,
           "argument": "KC_C"
         },
         {
