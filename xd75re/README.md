@@ -1,7 +1,7 @@
 # XD75 Flashing
 
-No need to follow the steps provided by KPRepublic, QMK Firmware can handle it.
-I follow these posts to get the flashing process up and running.
+No need to follow the steps provided by KPRepublic, QMK Firmware can handle it.  
+I followed these posts to get the flashing process up and running.
 
 - [Steps to flash xd60 on windows](https://imgur.com/r/mechanicalkeyboards/IcT03)
 - [How to flash QMK on XD75re on Linux](https://www.reddit.com/r/MechanicalKeyboards/comments/71y5of/help_flashing_qmk_on_a_xd75re_no_dfu_capable/)
