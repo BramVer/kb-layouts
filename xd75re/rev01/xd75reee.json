@@ -1951,7 +1951,7 @@
         "col": 7,
         "keycodes": [
           {
-            "id": "KC_EQL",
+            "id": "KC_BSLS",
             "fields": []
           },
           {
@@ -2039,7 +2039,7 @@
         "col": 8,
         "keycodes": [
           {
-            "id": "KC_BSLS",
+            "id": "KC_EQL",
             "fields": []
           },
           {
