@@ -1,4 +1,4 @@
-/* Copyright 2018 darm
+ /* Copyright 2018 darm
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,8 +19,8 @@
 
 #include "../../config.h"
 
-#define MOUSEKEY_DELAY             200
-#define MOUSEKEY_INTERVAL          40
+#define MOUSEKEY_DELAY             100
+#define MOUSEKEY_INTERVAL          20
 #define MOUSEKEY_MAX_SPEED         10
 #define MOUSEKEY_TIME_TO_MAX       40
 #define MOUSEKEY_WHEEL_MAX_SPEED   8
