@@ -31,7 +31,7 @@ enum custom_keycodes {
   LOWER,
   LINVERT,
   RAISE,
-  _EMOJIFY,
+  EMOJIFY,
 };
 
 enum emoji_map {
@@ -45,7 +45,7 @@ enum emoji_map {
   EYES, // eyes
   THNK, // BIG THONK
   NAIL, // Nailcare 💅
-}
+};
 
 const uint32_t PROGMEM unicode_map[] = {
 	[UNAM] = 0x1F612,
@@ -58,7 +58,7 @@ const uint32_t PROGMEM unicode_map[] = {
 	[EYES] = 0x1F440,
 	[THNK] = 0x1F914,
 	[NAIL] = 0x1F485,
-}
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		{ KC_TAB  , KC_Q		, KC_W		, KC_E		, KC_R		, KC_T		, KC_MINS	, KC_EQL	, KC_BSLS	, KC_Y		, KC_U		, KC_I		, KC_O		, KC_P		, KC_ENT	},
 		{ MO(3)   , KC_A		, KC_S		, KC_D		, KC_F		, KC_G		, KC_LBRC	, KC_MUTE	, KC_RBRC	, KC_H		, KC_J		, KC_K		, KC_L		, KC_SCLN	, KC_QUOT	},
 		{ KC_LSFT , KC_Z		, KC_X		, KC_C		, KC_V		, KC_B		, KC_HOME	, M(0)		, KC_END	, KC_N		, KC_M		, KC_COMM	, KC_DOT	, KC_SLSH	, KC_RSFT	},
-		{ KC_LCTL , MO(4)	  , KC_LALT	, KC_LGUI	, KC_SPC	, KC_SPC	, MO(1)		, KC_DEL	, MO(2)	, KC_SPC	, KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, KC_RGUI	},
+		{ KC_LCTL , M(1)	  , KC_LALT	, KC_LGUI	, KC_SPC	, KC_SPC	, MO(1)		, KC_DEL	, MO(2)	, KC_SPC	, KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, KC_RGUI	},
 	},
 
 	[_LOWER] = {
@@ -97,16 +97,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_EMOJIFY] = {
 		{ TO(0)   , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , RESET  },
 		{ _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______},
-		{ _______ , X(CELE) , X(PRAY) , X(NAIL) , X(OK)   , X(THNK) , _______ , _______ , _______ , x(UNAM) , X(HEYE) , X(COOL) , X(EYES) , X(SMIR) , _______},
+		{ _______ , X(CELE) , X(PRAY) , X(NAIL) , X(OK)   , X(THNK) , _______ , _______ , _______ , X(UNAM) , X(HEYE) , X(COOL) , X(EYES) , X(SMIR) , _______},
 		{ _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______},
 		{ _______ , XXXXXXX , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______},
 	},
 
 };
 
-const uint16_t PROGMEM fn_actions[] = {
+const uint16_t PROGMEM fn_actions[] = {};
 
-};
+void matrix_init_user(void) {
+  _delay_ms(20); // Gets rid of tick
+  set_unicode_input_mode(UC_LNX);  // Switch this to Linux when you get HOTS working on Wine.
+  // set_unicode_input_mode(UC_WINC);  // Switch this to Linux when you get HOTS working on Wine.
+}
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
 
