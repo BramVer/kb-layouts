@@ -63,11 +63,11 @@ const uint32_t PROGMEM unicode_map[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_BASE] = {
-		{ KC_GESC , KC_1		, KC_2		, KC_3		, KC_4		, KC_5		, KC_MPRV	, KC_MPLY	, KC_MNXT	, KC_6		, KC_7		, KC_8		, KC_9		, KC_0		, KC_BSPC	},
-		{ KC_TAB  , KC_Q		, KC_W		, KC_E		, KC_R		, KC_T		, KC_MINS	, KC_EQL	, KC_BSLS	, KC_Y		, KC_U		, KC_I		, KC_O		, KC_P		, KC_ENT	},
-		{ MO(3)   , KC_A		, KC_S		, KC_D		, KC_F		, KC_G		, KC_LBRC	, KC_MUTE	, KC_RBRC	, KC_H		, KC_J		, KC_K		, KC_L		, KC_SCLN	, KC_QUOT	},
-		{ KC_LSFT , KC_Z		, KC_X		, KC_C		, KC_V		, KC_B		, KC_HOME	, M(0)		, KC_END	, KC_N		, KC_M		, KC_COMM	, KC_DOT	, KC_SLSH	, KC_RSFT	},
-		{ KC_LCTL , M(1)	  , KC_LALT	, KC_LGUI	, KC_SPC	, KC_SPC	, MO(1)		, KC_DEL	, MO(2)	, KC_SPC	, KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, KC_RGUI	},
+		{ KC_GESC , KC_1	, KC_2		, KC_3		, KC_4		, KC_5		, KC_MPRV	, KC_MPLY	, KC_MNXT	, KC_6		, KC_7		, KC_8		, KC_9		, KC_0		, KC_BSPC	},
+		{ KC_TAB  , KC_Q	, KC_W		, KC_E		, KC_R		, KC_T		, KC_MINS	, KC_EQL	, KC_BSLS	, KC_Y		, KC_U		, KC_I		, KC_O		, KC_P		, KC_ENT	},
+		{ MO(3)   , KC_A	, KC_S		, KC_D		, KC_F		, KC_G		, KC_LBRC	, KC_MUTE	, KC_RBRC	, KC_H		, KC_J		, KC_K		, KC_L		, KC_SCLN	, KC_QUOT	},
+		{ KC_LSFT , KC_Z	, KC_X		, KC_C		, KC_V		, KC_B		, KC_HOME	, M(0)		, KC_END	, KC_N		, KC_M		, KC_COMM	, KC_DOT	, KC_SLSH	, KC_RSFT	},
+		{ KC_LCTL , M(1)	, KC_LALT	, KC_LGUI	, KC_SPC	, KC_SPC	, MO(1)		, KC_DEL	, MO(2)	, KC_SPC	, KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, KC_RGUI	},
 	},
 
 	[_LOWER] = {
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		{ _______ , KC_WH_L	, KC_BTN1	, KC_MS_U	, KC_BTN2	, KC_WH_U	, BL_STEP	, RGB_TOG	, RGB_MOD	, _______	, _______	, _______	, _______	, _______	, _______	},
 		{ _______ , KC_WH_R	, KC_MS_L	, KC_MS_D	, KC_MS_R	, KC_WH_D	, RGB_HUI	, RGB_HUD	, RGB_SAI	, _______	, KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, _______	},
 		{ _______ , _______	, _______	, _______	, _______	, _______	, RGB_SAD	, RGB_VAI	, RGB_VAD	, _______	, _______	, _______	, _______	, _______	, _______	},
-		{ _______ , TO(0)		, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
+		{ _______ , TO(0)	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
 	},
 
 	[_LINVERT] = {
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		{ _______ , _______	, _______	, _______	, _______	, _______	, BL_STEP	, RGB_TOG	, RGB_MOD	, KC_WH_U	, KC_BTN1	, KC_MS_U	, KC_BTN2	, KC_WH_L	, _______	},
 		{ _______ , KC_LEFT	, KC_DOWN	, KC_UP		, KC_RGHT	, _______	, RGB_SAI , RGB_HUI	, RGB_HUD	, KC_WH_D	, KC_MS_L	, KC_MS_D	, KC_MS_R	, KC_WH_R	, _______	},
 		{ _______ , _______	, _______	, _______	, _______	, _______	, RGB_SAD	, RGB_VAI	, RGB_VAD	, _______	, _______	, _______	, _______	, _______	, _______	},
-		{ _______ , TO(0)		, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
+		{ _______ , TO(0)	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
 	},
 
 	[_RAISE] = {
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		{ _______ , _______	, KC_7		, KC_8		, KC_9		, _______	, _______	, _______	, _______	, _______	, KC_MUTE	, KC_VOLD	, KC_VOLU	, _______	, _______	},
 		{ _______ , _______	, KC_4		, KC_5		, KC_6		, _______	, _______	, _______	, _______	, _______	, KC_MPRV	, KC_MPLY	, KC_MNXT	, _______	, _______	},
 		{ _______ , _______	, KC_1		, KC_2		, KC_3		, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
-		{ _______ , TO(0)		, _______	, KC_0  	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
+		{ _______ , TO(0)	, _______	, KC_0  	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	, _______	},
 	},
 
 	[_EMOJIFY] = {
