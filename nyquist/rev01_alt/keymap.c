@@ -18,7 +18,7 @@ enum custom_layers {
 
 // Enable these functions using FUNC(n) macro.
 const uint16_t PROGMEM fn_actions[] = { //ACTION_LAYER_TAP_TOGGLE requires that number of taps be defined in *config.h* - default set to 5
-    [0] = LT(_LOWER, KC_SPC),    //Hold for momentary Lower layer, Tap for Backspace, 
+    [0] = LT(_LOWER, KC_SPC),    //Hold for momentary Lower layer, Tap for Backspace,
     [1] = LT(_RAISE, KC_BSPC),     //Hold for momentary Raise layer, Tap for Space,
     [2] = MO(_ARROW), //Hold for momentary Arrow
  };
@@ -33,7 +33,7 @@ const uint16_t PROGMEM fn_actions[] = { //ACTION_LAYER_TAP_TOGGLE requires that 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-/* BASE 
+/* BASE
  * .----------------------------------------.     .-----------------------------------------.
  * | Esc |   1  |   2  |   3  |   4  |   5  |     |   6  |   7  |   8  |   9  |   0  |  -   |
  * |-----+------+------+------+------+------|     |------+------+------+------+------+------|
@@ -48,12 +48,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_BASE] = LAYOUT(
-  KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,  
-  KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,      KC_O,    KC_P,    KC_ENT, 
-  KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,      KC_L,    KC_SCLN, KC_QUOT, 
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM,   KC_DOT,  KC_SLSH, KC_RSFT, 
-  ARW,     KC_LCTL, KC_LALT, KC_LGUI, BSP_RSE, BSP_RSE, SPC_LWR, SPC_LWR, KC_RGUI,   KC_RALT, KC_RCTL, KC_DEL 
-  ),  
+  KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,
+  KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,      KC_O,    KC_P,    KC_ENT,
+  KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,      KC_L,    KC_SCLN, KC_QUOT,
+  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM,   KC_DOT,  KC_SLSH, KC_RSFT,
+  ARW,     KC_LCTL, KC_LALT, KC_LGUI, BSP_RSE, BSP_RSE, SPC_LWR, SPC_LWR, KC_RGUI,   KC_RALT, KC_RCTL, KC_DEL
+  ),
 
 /* Raise
  * ,-----------------------------------------.    .-----------------------------------------.
@@ -69,12 +69,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'    `-----------------------------------------'
  */
 
-[_RAISE] = LAYOUT( 
-  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_PEQL, KC_PSLS, KC_PAST, KC_MINS,  KC_BSLS, KC_GRV, 
+[_RAISE] = LAYOUT(
+  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_PEQL, KC_PSLS, KC_PAST, KC_MINS,  KC_BSLS, KC_GRV,
   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_7,    KC_8,    KC_9,    KC_PPLS,  KC_LBRC, KC_RBRC,
   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4,    KC_5,    KC_6,    KC_PENT,  XXXXXXX, XXXXXXX,
   _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_1,    KC_2,    KC_3,    KC_SPC,   XXXXXXX, XXXXXXX,
-  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  _______,  KC_0,    KC_0,    KC_DOT,  KC_BSPC,  XXXXXXX, XXXXXXX 
+  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  _______,  KC_0,    KC_0,    KC_DOT,  KC_BSPC,  XXXXXXX, XXXXXXX
 ),
 
 /* Lower
@@ -91,12 +91,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'    `-----------------------------------------'
 */
 
-[_LOWER] = LAYOUT( 
-  KC_F1,    KC_F2,   KC_F3,    KC_F4,   KC_F5,   KC_F6,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-  KC_F7,    KC_F8,   KC_F9,    KC_F10,  KC_F11,  KC_F12,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-  KC_MPLY,  KC_MUTE, KC_VOLD,  KC_VOLU, KC_MPRV, KC_MNXT, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-  RGB_TOG,  RGB_MOD, RGB_RMOD, RGB_HUI, RGB_HUD, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-  RGB_SAI,  RGB_SAD, RGB_VAI,  RGB_VAD, XXXXXXX, XXXXXXX, _______,  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX 
+[_LOWER] = LAYOUT(
+  KC_F1,    KC_F2,   KC_F3,    KC_F4,   KC_F5,   KC_F6,   XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  KC_F7,    KC_F8,   KC_F9,    KC_F10,  KC_F11,  KC_F12,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  KC_MPLY,  KC_MUTE, KC_VOLD,  KC_VOLU, KC_MPRV, KC_MNXT, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  RGB_TOG,  RGB_MOD, RGB_RMOD, RGB_HUI, RGB_HUD, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  RGB_SAI,  RGB_SAD, RGB_VAI,  RGB_VAD, XXXXXXX, XXXXXXX, _______,  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
 /* Arrow
@@ -113,12 +113,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'     `----------------------------------------'
  */
 
-[_ARROW] = LAYOUT( 
-  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, 
+[_ARROW] = LAYOUT(
+  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,
   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX,  XXXXXXX, XXXXXXX,
   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT,  XXXXXXX, XXXXXXX,
   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,
-  _______,  XXXXXXX,  XXXXXXX,  _______,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX 
+  _______,  XXXXXXX,  XXXXXXX,  _______,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX
 ),
 
 };
@@ -156,4 +156,47 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
   }
   return true;
+}
+
+#ifdef RGBLIGHT_ENABLE
+bool rgb_layer_change = true;
+#endif
+
+#define rgblight_set_blue        rgblight_sethsv (0xFF,  0xFF, 0xFF);
+#define rgblight_set_red         rgblight_sethsv (0x00,  0xFF, 0xFF);
+#define rgblight_set_green       rgblight_sethsv (0x78,  0xFF, 0xFF);
+#define rgblight_set_orange      rgblight_sethsv (0x1E,  0xFF, 0xFF);
+#define rgblight_set_teal        rgblight_sethsv (0xC3,  0xFF, 0xFF);
+#define rgblight_set_magenta     rgblight_sethsv (0x12C, 0xFF, 0xFF);
+#define rgblight_set_yellow      rgblight_sethsv (0x3C,  0xFF, 0xFF);
+#define rgblight_set_purple      rgblight_sethsv (0x10E, 0xFF, 0xFF);
+#define rgblight_set_white       rgblight_sethsv (0x00,  0x00, 0xFF);
+#define rgblight_set_black       rgblight_sethsv (0x00,  0x00, 0x00);
+
+uint32_t layer_state_set_user(uint32_t state) {
+#ifdef RGBLIGHT_ENABLE
+  uint8_t default_layer = eeconfig_read_default_layer();
+  if (rgb_layer_change) {
+    switch (biton32(state)) {
+    case _LOWER:
+      rgblight_set_purple;
+      rgblight_mode(5);
+      break;
+    case _ARROW:
+    rgblight_set_green;
+      rgblight_mode(23);
+      break;
+  case _RAISE:
+      rgblight_mode(8);
+      break;
+    default:
+      if (default_layer & (1UL << _GAME)) {
+      }
+      else
+      rgblight_mode(14);
+      break;
+    }
+  }
+#endif
+  return state;
 }
