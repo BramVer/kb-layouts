@@ -96,7 +96,7 @@ const uint32_t PROGMEM unicode_map[] = {
 
 // Enable these functions using FUNC(n) macro.
 const uint16_t PROGMEM fn_actions[] = { //ACTION_LAYER_TAP_TOGGLE requires that number of taps be defined in *config.h* - default set to 5
-    [0] = LT(_LMOUSE, KC_SPC),       //Hold for momentary LMouse layer, Tap for Space, 
+    [0] = LT(_LMOUSE, KC_SPC),       //Hold for momentary LMouse layer, Tap for Space,
     [1] = LT(_RMOUSE, KC_SPC),      //Hold for momentary RMouse layer, Tap for Space,
     [2] = MO(_LOWER),               //Hold for momentary Lower
     [3] = MO(_RAISE),               //Hold for momentary Raise
@@ -146,7 +146,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Ctrl |      | Alt  | GUI  |      |      | |      |      | GUI  | Alt  |      | Ctrl |
  * `-----------------------------------------' `-----------------------------------------'
  */
-[_BASE] = LAYOUT( \
+[_LOWER] = LAYOUT( \
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
   xxxxxxx ,   KC_RCBR ,   KC_MINS ,   KC_EQL  ,   KC_LBRC ,   KC_RBRC , /**/    KC_LBRC ,   KC_RBRC ,   KC_MINS ,   KC_EQL  , KC_BSLS ,   KC_DEL  , \
@@ -168,6 +168,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------' `-----------------------------------------'
  */
 
+[_RAISE] = LAYOUT( \
+  _______ ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_EQL  ,   KC_SLSH ,   KC_ASTR ,   KC_MINS , _______ , \
+  _______ ,   KC_F9   ,   KC_F10  ,   KC_F11  ,   KC_F12  ,   xxxxxxx , /**/  xxxxxxx ,   KC_7    ,   KC_8    ,   KC_9    ,   KC_PLUS , _______ , \
+  xxxxxxx ,   KC_F5   ,   KC_F6   ,   KC_F7   ,   KC_F8   ,   xxxxxxx , /**/  xxxxxxx ,   KC_4    ,   KC_5    ,   KC_6    ,   KC_COMM , KC_DEL  , \
+  _______ ,   KC_F1   ,   KC_F2   ,   KC_F3   ,   KC_F4   ,   xxxxxxx , /**/  xxxxxxx ,   KC_1    ,   KC_2    ,   KC_3    ,   KC_DOT  , _______ , \
+  _______ ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_0    ,   _______ ,   _______ ,   xxxxxxx , _______  \
+),
+
 /* LMOUSE (Lower + Raise)
  * ,-----------------------------------------. ,-----------------------------------------.
  * | GESC |      | Home | End  | PGUP | PGDN | |      |      |      |      |      | Bksp |
@@ -181,6 +189,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Ctrl |      | Alt  | GUI  |      |      | |      |      | GUI  | Alt  |      | Ctrl |
  * `-----------------------------------------' `-----------------------------------------'
  */
+
+[_LMOUSE] = LAYOUT( \
+  _______ ,   xxxxxxx ,   KC_HOME ,   KC_END  ,   KC_PGUP ,   KC_PGDN , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
+  _______ ,   KC_WH_L ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_U , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
+  xxxxxxx ,   KC_WH_R ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_D , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , KC_DEL  , \
+  _______ ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
+  _______ ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx , _______  \
+),
 
 /* RMOUSE (Lower + Raise)
  * ,-----------------------------------------. ,-----------------------------------------.
@@ -196,88 +212,42 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------' `-----------------------------------------'
  */
 
+[_RMOUSE] = LAYOUT( \
+  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_PGUP ,   KC_PGDN ,   KC_HOME ,   KC_END  ,   xxxxxxx ,   _______ , \
+  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_WH_U ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_L ,   _______ , \
+  xxxxxxx , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_WH_D ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_R ,   KC_DEL  , \
+  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   _______ , \
+  _______ , xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   _______  \
+),
 
 /* Emojis
  * ,-----------------------------------------. ,-----------------------------------------.
  * | GESC |      |      |      |      |      | | RSET |      |      |      |      | Bksp |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
- * | Tab  | CLAP | CUM  | BNIS | BUTT | CAR  | | FIRE |  B   | MONY | 100  | PRTE | Entr |
+ * | Tab  | CLAP | CUM  | BNIS | BUTT | CAR  | | FIRE | REDB | MONY | 100  | SOS | Entr |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
  * |      | CELE | PRAY | NAIL |  OK  | THNK | | UNAM | HEYE | COOL | EYES | SMIR | Del  |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
- * | Shft | TRIU | SRCM | VOMI | DTIV | EXPL | | HAIR | DANC | STRN | LEFT | RGHT | Shft |
+ * | Shft | TRIU | SCRM | VOMI | DTIV | EXPL | | HAIR | DANC | STRN | LEFT | RGHT | Shft |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
  * | Ctrl |      | Alt  | GUI  |      |      | |      |      | GUI  | Alt  |      | Ctrl |
  * `-----------------------------------------' `-----------------------------------------'
  */
 
-
-
-/* Lower
- * ,-----------------------------------------------------------------------------------.
- * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Bksp |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   _  |   +  |     |    \  |  |   |
- * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |ISO ~ |ISO | |      |      |Enter |
- * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
- * `-----------------------------------------------------------------------------------'
- */
-[_LOWER] = LAYOUT( \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL, \
-  KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
-  _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,S(KC_NUHS),S(KC_NUBS),_______, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY \
+[_EMOJI] = LAYOUT( \
+  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  RESET   ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   _______ , \
+  _______ , X(CLAP) ,   X(CUM)  ,   X(BNIS) ,   X(BUTT) ,   X(CAR)  , /**/  X(FIRE) ,   X(REDB) ,   X(MONY) ,   X(100P) ,   X(SOS)  ,   _______ , \
+  xxxxxxx , X(CELE) ,   X(PRAY) ,   X(NAIL) ,   X(OK)   ,   X(THNK) , /**/  X(UNAM) ,   X(HEYE) ,   X(COOL) ,   X(EYES) ,   X(SMIR) ,   KC_DEL  , \
+  _______ , X(TRIU) ,   X(SCRM) ,   X(VOMI) ,   X(DTIV) ,   X(EXPL) , /**/  X(HAIR) ,   X(DANC) ,   X(STRN) ,   X(LEFT)   ,   X(RGHT) ,   _______ , \
+  _______ , xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   _______  \
 ),
-
-/* Raise
- * ,-----------------------------------------------------------------------------------.
- * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Del  |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   -  |   =  |   [  |   ]  |  \   |
- * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |ISO # |ISO / |      |      |Enter |
- * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
- * `-----------------------------------------------------------------------------------'
- */
-[_RAISE] = LAYOUT( \
-  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC, \
-  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL, \
-  KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, \
-  _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_NUHS, KC_NUBS, _______, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY \
-),
-
-/* LINVERT (Lower + Raise)
- * ,-----------------------------------------------------------------------------------.
- * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
- * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Reset|RGB Tg|RGB Md|Hue Up|Hue Dn|Sat Up|Sat Dn|Val Up|Val Dn|      |  Del |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |Aud on|Audoff|AGnorm|AGswap|Qwerty|Colemk|Dvorak|      |      |
- * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |      |      |
- * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      |      |      |      |      |
- * `-----------------------------------------------------------------------------------'
- */
-[_LINVERT] =  LAYOUT( \
-  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12, \
-  _______, RESET  , RGB_TOG, RGB_MOD, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, RGB_VAD, RGB_VAI, _______, KC_DEL, \
-  _______, _______, _______, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ \
-)
-
 
 };
+
+void matrix_init_user(void) {
+  _delay_ms(20); // Gets rid of tick
+  set_unicode_input_mode(UC_LNX);
+}
 
 void persistent_default_layer_set(uint16_t default_layer) {
   eeconfig_update_default_layer(default_layer);
@@ -286,37 +256,49 @@ void persistent_default_layer_set(uint16_t default_layer) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case QWERTY:
+    case BASE:
       if (record->event.pressed) {
-        persistent_default_layer_set(1UL<<_QWERTY);
+        persistent_default_layer_set(1UL<<_BASE);
       }
       return false;
       break;
     case LOWER:
       if (record->event.pressed) {
         layer_on(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _LINVERT);
       } else {
         layer_off(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _LINVERT);
       }
       return false;
       break;
     case RAISE:
       if (record->event.pressed) {
         layer_on(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _LINVERT);
       } else {
         layer_off(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _LINVERT);
       }
       return false;
       break;
-    case LINVERT:
+    case LMOUSE:
       if (record->event.pressed) {
-        layer_on(_LINVERT);
+        layer_on(_LMOUSE);
       } else {
-        layer_off(_LINVERT);
+        layer_off(_LMOUSE);
+      }
+      return false;
+      break;
+    case RMOUSE:
+      if (record->event.pressed) {
+        layer_on(_RMOUSE);
+      } else {
+        layer_off(_RMOUSE);
+      }
+      return false;
+      break;
+    case EMOJI:
+      if (record->event.pressed) {
+        layer_on(_EMOJI);
+      } else {
+        layer_off(_EMOJI);
       }
       return false;
       break;
