@@ -41,7 +41,7 @@ enum emoji_map {
   NAIL, // Nailcare
   SOS, // Vuile sos
   REDB, // Red B
-  100P, // 100
+  HNDR, // 100
   MONY,
   FIRE,
   CAR,
@@ -74,7 +74,7 @@ const uint32_t PROGMEM unicode_map[] = {
   [NAIL] = 0x1F485,
   [SOS] = 0x1F198,
   [REDB] = 0x1F171,
-  [100P] = 0x1F4AF,
+  [HNDR] = 0x1F4AF,
   [MONY] = 0x1F480,
   [FIRE] = 0x1F525,
   [CAR] = 0x1F697,
@@ -149,9 +149,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT( \
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
-  xxxxxxx ,   KC_RCBR ,   KC_MINS ,   KC_EQL  ,   KC_LBRC ,   KC_RBRC , /**/    KC_LBRC ,   KC_RBRC ,   KC_MINS ,   KC_EQL  , KC_BSLS ,   KC_DEL  , \
-  _______ ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/    KC_MPLY ,   KC_VOLU ,   KC_VOLD ,   KC_MUTE , KC_MNXT ,   _______ , \
-  _______ ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/    xxxxxxx ,   xxxxxxx ,   _______ ,   _______ , xxxxxxx ,   _______  \
+  XXXXXXX ,   KC_RCBR ,   KC_MINS ,   KC_EQL  ,   KC_LBRC ,   KC_RBRC , /**/    KC_LBRC ,   KC_RBRC ,   KC_MINS ,   KC_EQL  , KC_BSLS ,   KC_DEL  , \
+  _______ ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/    KC_MPLY ,   KC_VOLU ,   KC_VOLD ,   KC_MUTE , KC_MNXT ,   _______ , \
+  _______ ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/    XXXXXXX ,   XXXXXXX ,   _______ ,   _______ , XXXXXXX ,   _______  \
 ),
 
 /* Raise
@@ -169,11 +169,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_RAISE] = LAYOUT( \
-  _______ ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_EQL  ,   KC_SLSH ,   KC_ASTR ,   KC_MINS , _______ , \
-  _______ ,   KC_F9   ,   KC_F10  ,   KC_F11  ,   KC_F12  ,   xxxxxxx , /**/  xxxxxxx ,   KC_7    ,   KC_8    ,   KC_9    ,   KC_PLUS , _______ , \
-  xxxxxxx ,   KC_F5   ,   KC_F6   ,   KC_F7   ,   KC_F8   ,   xxxxxxx , /**/  xxxxxxx ,   KC_4    ,   KC_5    ,   KC_6    ,   KC_COMM , KC_DEL  , \
-  _______ ,   KC_F1   ,   KC_F2   ,   KC_F3   ,   KC_F4   ,   xxxxxxx , /**/  xxxxxxx ,   KC_1    ,   KC_2    ,   KC_3    ,   KC_DOT  , _______ , \
-  _______ ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_0    ,   _______ ,   _______ ,   xxxxxxx , _______  \
+  _______ ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   KC_EQL  ,   KC_SLSH ,   KC_ASTR ,   KC_MINS , _______ , \
+  _______ ,   KC_F9   ,   KC_F10  ,   KC_F11  ,   KC_F12  ,   XXXXXXX , /**/  XXXXXXX ,   KC_7    ,   KC_8    ,   KC_9    ,   KC_PLUS , _______ , \
+  XXXXXXX ,   KC_F5   ,   KC_F6   ,   KC_F7   ,   KC_F8   ,   XXXXXXX , /**/  XXXXXXX ,   KC_4    ,   KC_5    ,   KC_6    ,   KC_COMM , KC_DEL  , \
+  _______ ,   KC_F1   ,   KC_F2   ,   KC_F3   ,   KC_F4   ,   XXXXXXX , /**/  XXXXXXX ,   KC_1    ,   KC_2    ,   KC_3    ,   KC_DOT  , _______ , \
+  _______ ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   KC_0    ,   _______ ,   _______ ,   XXXXXXX , _______  \
 ),
 
 /* LMOUSE (Lower + Raise)
@@ -191,11 +191,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_LMOUSE] = LAYOUT( \
-  _______ ,   xxxxxxx ,   KC_HOME ,   KC_END  ,   KC_PGUP ,   KC_PGDN , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
-  _______ ,   KC_WH_L ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_U , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
-  xxxxxxx ,   KC_WH_R ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_D , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , KC_DEL  , \
-  _______ ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , _______ , \
-  _______ ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx , _______  \
+  _______ ,   XXXXXXX ,   KC_HOME ,   KC_END  ,   KC_PGUP ,   KC_PGDN , /**/  XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , _______ , \
+  _______ ,   KC_WH_L ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_U , /**/  XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , _______ , \
+  XXXXXXX ,   KC_WH_R ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_D , /**/  XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , KC_DEL  , \
+  _______ ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   XXXXXXX , /**/  XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , _______ , \
+  _______ ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX , _______  \
 ),
 
 /* RMOUSE (Lower + Raise)
@@ -213,11 +213,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_RMOUSE] = LAYOUT( \
-  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_PGUP ,   KC_PGDN ,   KC_HOME ,   KC_END  ,   xxxxxxx ,   _______ , \
-  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_WH_U ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_L ,   _______ , \
-  xxxxxxx , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  KC_WH_D ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_R ,   KC_DEL  , \
-  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   _______ , \
-  _______ , xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   _______  \
+  _______ , XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  KC_PGUP ,   KC_PGDN ,   KC_HOME ,   KC_END  ,   XXXXXXX ,   _______ , \
+  _______ , XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  KC_WH_U ,   KC_BTN1 ,   KC_MS_U ,   KC_BTN2 ,   KC_WH_L ,   _______ , \
+  XXXXXXX , XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  KC_WH_D ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   KC_WH_R ,   KC_DEL  , \
+  _______ , XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   KC_LEFT ,   KC_DOWN ,   KC_UP   ,   KC_RGHT ,   _______ , \
+  _______ , XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   _______  \
 ),
 
 /* Emojis
@@ -235,11 +235,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_EMOJI] = LAYOUT( \
-  _______ , xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx , /**/  RESET   ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   xxxxxxx ,   _______ , \
-  _______ , X(CLAP) ,   X(CUM)  ,   X(BNIS) ,   X(BUTT) ,   X(CAR)  , /**/  X(FIRE) ,   X(REDB) ,   X(MONY) ,   X(100P) ,   X(SOS)  ,   _______ , \
-  xxxxxxx , X(CELE) ,   X(PRAY) ,   X(NAIL) ,   X(OK)   ,   X(THNK) , /**/  X(UNAM) ,   X(HEYE) ,   X(COOL) ,   X(EYES) ,   X(SMIR) ,   KC_DEL  , \
+  _______ , XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/  RESET   ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   _______ , \
+  _______ , X(CLAP) ,   X(CUM)  ,   X(BNIS) ,   X(BUTT) ,   X(CAR)  , /**/  X(FIRE) ,   X(REDB) ,   X(MONY) ,   X(HNDR) ,   X(SOS)  ,   _______ , \
+  XXXXXXX , X(CELE) ,   X(PRAY) ,   X(NAIL) ,   X(OK)   ,   X(THNK) , /**/  X(UNAM) ,   X(HEYE) ,   X(COOL) ,   X(EYES) ,   X(SMIR) ,   KC_DEL  , \
   _______ , X(TRIU) ,   X(SCRM) ,   X(VOMI) ,   X(DTIV) ,   X(EXPL) , /**/  X(HAIR) ,   X(DANC) ,   X(STRN) ,   X(LEFT)   ,   X(RGHT) ,   _______ , \
-  _______ , xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   xxxxxxx , /**/  xxxxxxx ,   xxxxxxx ,   _______ ,   _______ ,   xxxxxxx ,   _______  \
+  _______ , XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/  XXXXXXX ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   _______  \
 ),
 
 };
