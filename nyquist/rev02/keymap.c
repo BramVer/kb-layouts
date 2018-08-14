@@ -141,7 +141,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
  * |      |  \   |  -   |  =   |  [   |  ]   | |  [   |  ]   |  -   |  =   |  \   | Del  |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
- * | Shft |      |      |      |      |      | | Play | Vol+ | Vol- | Mute | Next | Shft |
+ * | Shft |  ^Z  |  ^X  |  ^C  |  ^V  |      | | Play | Vol+ | Vol- | Mute | Next | Shft |
  * |------+------+------+------+------+------| |------+------+------+------+------+------|
  * | Ctrl |      | Alt  | GUI  |      |      | |      |      | GUI  | Alt  |      | Ctrl |
  * `-----------------------------------------' `-----------------------------------------'
@@ -150,7 +150,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
   _______ ,   KC_EXLM ,   KC_AT   ,   KC_HASH ,   KC_DLR  ,   KC_PERC , /**/    KC_CIRC ,   KC_AMPR ,   KC_ASTR ,   KC_LPRN , KC_RPRN ,   _______ , \
   XXXXXXX ,   KC_RCBR ,   KC_MINS ,   KC_EQL  ,   KC_LBRC ,   KC_RBRC , /**/    KC_LBRC ,   KC_RBRC ,   KC_MINS ,   KC_EQL  , KC_BSLS ,   KC_DEL  , \
-  _______ ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX ,   XXXXXXX , /**/    KC_MPLY ,   KC_VOLU ,   KC_VOLD ,   KC_MUTE , KC_MNXT ,   _______ , \
+  _______ ,   M(0)    ,   M(1)    ,   M(2)    ,   M(3)    ,   XXXXXXX , /**/    KC_MPLY ,   KC_VOLU ,   KC_VOLD ,   KC_MUTE , KC_MNXT ,   _______ , \
   _______ ,   XXXXXXX ,   _______ ,   _______ ,   XXXXXXX ,   XXXXXXX , /**/    XXXXXXX ,   XXXXXXX ,   _______ ,   _______ , XXXXXXX ,   _______  \
 ),
 
@@ -247,4 +247,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void matrix_init_user(void) {
   _delay_ms(20); // Gets rid of tick
   set_unicode_input_mode(UC_LNX);
+}
+
+const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
+
+  switch (id) {
+    case 0:
+      if (record->event.pressed) {
+        return MACRO( D(LCTRL), T(Z), U(LCTRL), END );
+      }
+      break;
+    case 1:
+      if (record->event.pressed) {
+        return MACRO( D(LCTRL), T(X), U(LCTRL), END );
+      }
+      break;
+    case 2:
+      if (record->event.pressed) {
+        return MACRO( D(LCTRL), T(C), U(LCTRL), END );
+      }
+      break;
+    case 3:
+      if (record->event.pressed) {
+        return MACRO( D(LCTRL), T(V), U(LCTRL), END );
+      }
+      break;
+    default:
+      return MACRO_NONE;
+  }
+  return MACRO_NONE;
+
 }
