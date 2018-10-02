@@ -16,14 +16,20 @@
 
 #ifndef CONFIG_USER_H
 #define CONFIG_USER_H
-
 #include "../../config.h"
 
-#define MOUSEKEY_DELAY             250
-#define MOUSEKEY_INTERVAL          35
-#define MOUSEKEY_MAX_SPEED         8
-#define MOUSEKEY_TIME_TO_MAX       50
+#define USE_SERIAL
+#define MASTER_LEFT
+
+#define TAPPING_TERM 200
+#define TAPPING_TOGGLE 2
+
+#define MOUSEKEY_DELAY             0
+#define MOUSEKEY_INTERVAL          16
+#define MOUSEKEY_MAX_SPEED         7
+#define MOUSEKEY_TIME_TO_MAX       60
 #define MOUSEKEY_WHEEL_MAX_SPEED   8
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 40
+#define MOUSEKEY_WHEEL_DELAY 0
 
 #endif
