@@ -11,5 +11,3 @@ and only provide a build log rather than actual instructions.
 ## Remarks
 **Initially, both pro micros need to be flashed**, in order to communicate with each other.  
 After this though, only the master needs to be updated whenever you want to flash a new keymap. 
-
-*Note:* Sadly this is atm only for future reference, my switches and keycaps still haven't arrived 😠
