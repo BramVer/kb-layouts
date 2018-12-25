@@ -36,7 +36,27 @@ enum emoji_map {
   COOL, // smile with sunglasses 😎
   EYES, // eyes
   THNK, // BIG THONK
-  NAIL, // Nailcare 💅
+  NAIL, // Nailcare
+  SOS, // Vuile sos
+  REDB, // Red B
+  HNDR, // 100
+  MONY,
+  FIRE,
+  CAR,
+  BUTT,
+  BNIS,
+  CUM,
+  CLAP,
+  TRIU, // Fart from nose
+  SCRM,
+  VOMI,
+  DTIV, // Detective
+  EXPL, // Brainsplosion
+  HAIR, // Haircut
+  DANC, // Salsa dancer
+  STRN, // Stronk
+  LEFT, // Point Left
+  RGHT, // Point Right
 };
 
 const uint32_t PROGMEM unicode_map[] = {
@@ -50,13 +70,33 @@ const uint32_t PROGMEM unicode_map[] = {
   [EYES] = 0x1F440,
   [THNK] = 0x1F914,
   [NAIL] = 0x1F485,
+  [SOS] = 0x1F198,
+  [REDB] = 0x1F171,
+  [HNDR] = 0x1F4AF,
+  [MONY] = 0x1F480,
+  [FIRE] = 0x1F525,
+  [CAR] = 0x1F697,
+  [BUTT] = 0x1F351,
+  [BNIS] = 0x1F346,
+  [CUM] = 0x1F4A6,
+  [CLAP] = 0x1F44F,
+  [TRIU] = 0x1F624,
+  [SCRM] = 0x1F631,
+  [VOMI] = 0x1F92E,
+  [DTIV] = 0x1F575,
+  [EXPL] = 0x1F92F,
+  [HAIR] = 0x2640,
+  [DANC] = 0x1F483,
+  [STRN] = 0x1F4AA,
+  [LEFT] = 0x1F448,
+  [RGHT] = 0x1F449,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_BASE] = {
     { KC_GESC , KC_1  , KC_2    , KC_3    , KC_4    , KC_5    , KC_MPRV , KC_MPLY , KC_MNXT , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_BSPC },
-    { KC_TAB  , KC_Q  , KC_W    , KC_E    , KC_R    , KC_T    , KC_MINS , KC_EQL  , KC_BSLS , KC_Y    , KC_U    , KC_I    , KC_O    , KC_P    , KC_ENT  },
+    { KC_TAB  , KC_Q  , KC_W    , KC_E    , KC_R    , KC_T    , KC_MINS , KC_BSLS , KC_EQL  , KC_Y    , KC_U    , KC_I    , KC_O    , KC_P    , KC_ENT  },
     { MO(3)   , KC_A  , KC_S    , KC_D    , KC_F    , KC_G    , KC_LBRC , KC_MUTE , KC_RBRC , KC_H    , KC_J    , KC_K    , KC_L    , KC_SCLN , KC_QUOT },
     { KC_LSFT , KC_Z  , KC_X    , KC_C    , KC_V    , KC_B    , KC_HOME , KC_SLEP , KC_END  , KC_N    , KC_M    , KC_COMM , KC_DOT  , KC_SLSH , KC_RSFT },
     { KC_LCTL , MO(4) , KC_LALT , KC_LGUI , KC_SPC  , KC_SPC  , MO(1)   , KC_DEL  , MO(2)   , KC_SPC  , KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , KC_RGUI },
@@ -87,19 +127,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   },
 
   [_EMOJIFY] = {
-    { TO(0)   , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , RESET   },
-    { _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ },
+    { TO(0)   , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ },
+    { _______ , X(CLAP) , X(CUM)  , X(BNIS) , X(BUTT) , X(CAR)  , _______ , _______ , _______ , X(FIRE) , X(REDB) , X(MONY) , X(HNDR) , X(SOS)  , _______ },
     { _______ , X(CELE) , X(PRAY) , X(NAIL) , X(OK)   , X(THNK) , _______ , _______ , _______ , X(UNAM) , X(HEYE) , X(COOL) , X(EYES) , X(SMIR) , _______ },
-    { _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ },
+    { _______ , X(TRIU) , X(SCRM) , X(VOMI) , X(DTIV) , X(EXPL) , _______ , _______ , _______ , X(HAIR) , X(DANC) , X(STRN) , X(LEFT) , X(RGHT) , _______ },
     { _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ },
   },
 
 };
 
-const uint16_t PROGMEM fn_actions[] = {};
-
 void matrix_init_user(void) {
-  _delay_ms(20); // Gets rid of tick
   set_unicode_input_mode(UC_LNX);
 }
 
